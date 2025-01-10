@@ -796,6 +796,11 @@
 }
 
 /* ESTILO PARA PRESUPUESTO */
+.terminsList{
+ display: flex;
+ flex-direction: column;
+ margin-left: 5rem;
+}
 
 .budget-container{
   
@@ -806,10 +811,11 @@
   margin: 20px auto;
   max-width: 800px;
 }
-.budgetSection h1 {
+.budget-container .budgetSection h1 {
   font-size: 2.5rem;
   color: #2b6cb0;
   text-align: center;
+  margin-top: 5rem;
   margin-bottom: 20px;
 }
 .budgetSection p {
@@ -843,7 +849,6 @@
   margin: 20px auto;
   max-width: 1200px;
 }
-
 /* Título */
 .productsSection h1 {
   font-size: 2.5rem;
@@ -860,7 +865,43 @@
   margin-bottom: 30px;
 }
 
-/* Grid de Productos */
+/* ESTILOS PARA LOS TERMINOS Y CONDICIONES */
+.terms-wrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.terms-wrapper input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2); 
+  accent-color: #2b6cb0;
+}
+
+.terms-wrapper label {
+  font-size: 1rem;
+  color: #01050c;
+}
+
+.terms-wrapper label a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+.terms-wrapper label a:hover {
+  text-decoration: underline;
+  color: #1f3d6b;
+  font-weight: bold;
+}
+
+
+
+/* ESTILOS PARA LOS PRODUCTOS */
+.products-container .productsSection h1 {
+  margin-top:5rem ;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presupuesto</title>
-    <link rel="stylesheet" href="./../CSS/style.css">
+    <link rel="stylesheet" href="./../CSS/style.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="./../assets/images/logoEmpresa.png" alt="InnovaCraft Logo">
+                <img src="./../assets/images/logoEmpresa.png" alt="InnovaCraft Logo" />
             </div>
             <ul class="nav-link">
                 <li><a href="/index.html">Inicio</a></li>
@@ -22,50 +22,64 @@
             </ul>
         </nav>
     </header>
-
+<!-- MAIN PRINCIPAL -->
     <main class="budget-container">
         <section class="budgetSection">
             <h1>Solicita tu Presupuesto</h1>
-            <p>¿Tienes un proyecto en mente? ¡Déjanos ayudarte! Completa el formulario y te enviaremos un presupuesto
-                personalizado.</p>
+            <p>
+                ¿Tienes un proyecto en mente? ¡Déjanos ayudarte! Completa el
+                formulario y te enviaremos un presupuesto personalizado.
+            </p>
             <form class="budget-form" action="#" method="post">
                 <ul class="flex-outer">
                     <li>
                         <label for="project-name">Nombre del Proyecto</label>
                         <input type="text" id="project-name" name="project-name"
-                            placeholder="Escribe el nombre del proyecto" required>
+                            placeholder="Escribe el nombre del proyecto" required />
                     </li>
                     <li>
                         <label for="company-name">Nombre de la Empresa</label>
-                        <input type="text" id="company-name" name="company-name" placeholder="Nombre de tu empresa">
+                        <input type="text" id="company-name" name="company-name" placeholder="Nombre de tu empresa" />
                     </li>
                     <li>
                         <label for="email">Correo Electrónico</label>
                         <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico"
-                            required>
+                            required />
                     </li>
                     <li>
                         <label for="tel">Teléfono</label>
-                        <input type="tel" id="tel" name="tel" placeholder="Escribe tu número de teléfono">
+                        <input type="tel" id="tel" name="tel" placeholder="Escribe tu número de teléfono" />
                     </li>
                     <li>
                         <label for="project-type">Tipo de Proyecto</label>
                         <select id="project-type" name="project-type" required>
-                            <option value="" disabled selected>Selecciona un tipo de proyecto</option>
+                            <option value="" disabled selected>
+                                Selecciona un tipo de proyecto
+                            </option>
                             <option value="web-design">Diseño Web</option>
-                            <option value="app-development">Desarrollo de Aplicaciones</option>
+                            <option value="app-development">
+                                Desarrollo de Aplicaciones
+                            </option>
                             <option value="seo">SEO y Marketing Digital</option>
                             <option value="custom">Proyecto Personalizado</option>
                         </select>
                     </li>
                     <li>
                         <label for="budget">Presupuesto Aproximado (€)</label>
-                        <input type="number" id="budget" name="budget" placeholder="Ej: 5000" min="100" step="100">
+                        <input type="number" id="budget" name="budget" placeholder="Ej: 5000" min="100" step="100" />
                     </li>
                     <li>
                         <label for="details">Detalles Adicionales</label>
                         <textarea id="details" name="details" rows="5"
                             placeholder="Describe tu proyecto o requerimientos"></textarea>
+                    </li>
+                    <li class="terminsList">
+                        <div class="terms-wrapper">
+                            <input type="checkbox" id="terms" name="terms" required />
+                            <label for="terms">
+                                Acepto los <a href="#">Términos y Condiciones</a>
+                            </label>
+                        </div>
                     </li>
                     <li class="listButtons">
                         <button type="reset">Borrar</button>
@@ -75,15 +89,18 @@
             </form>
         </section>
     </main>
+
     <!-- footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-about">
                 <h3>InnovaCraft</h3>
-                <p>InnovaCraft es tu socio en soluciones tecnológicas personalizadas, ayudándote a destacar en el entorno
-                    digital.</p>
+                <p>
+                    InnovaCraft es tu socio en soluciones tecnológicas personalizadas,
+                    ayudándote a destacar en el entorno digital.
+                </p>
             </div>
-    
+
             <div class="footer-links">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
@@ -93,16 +110,22 @@
                     <li><a href="./productos.html">Productos</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer-social">
                 <h4>Conéctate con Nosotros</h4>
                 <ul>
                     <li>
-                        <a href="#"><img src="./../assets/images/iconofaceboock.webp" alt="Facebook"></a>
+                        <a href="#"><img src="./../assets/images/iconofaceboock.webp" alt="Facebook" /></a>
                     </li>
-                    <li><a href="#"><img src="./../assets/images/iconoinstagrams.webp" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="./../assets/images/linkeding.webp" alt="Linkeding"></a></li>
-                    <li><a href="#"><img src="./../assets/images/x-twitter.webp" alt="X"></a></li>
+                    <li>
+                        <a href="#"><img src="./../assets/images/iconoinstagrams.webp" alt="Instagram" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../assets/images/linkeding.webp" alt="Linkeding" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../assets/images/x-twitter.webp" alt="X" /></a>
+                    </li>
                 </ul>
             </div>
         </div>
