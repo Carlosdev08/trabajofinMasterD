@@ -1,227 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>InnovaCraft</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-  </head>
-  <body>
-    <header>
-      <!-- Barra de Navegación -->
-      <nav class="navbar">
-        <div class="logo">
-          <img src="./assets/images/logoEmpresa.png" alt="InnovaCraft Logo">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovaCraft</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/images/logoEmpresa.png" alt="InnovaCraft Logo">
+      </div>
+
+      <ul class="nav-link">
+        <li><a href="/index.html" class="active">Inicio</a></li>
+        <li><a href="./views/contacto.html">Contacto</a></li>
+        <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+        <li><a href="./views/productos.html">Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main global -->
+  <main class="main-container">
+    <section class="heroSection">
+      <h1>Bienvenidos a InnovaCraft</h1>
+      <span>Diseño y tecnología al alcance de tus manos</span>
+      <a href="./views/contacto.html">Contácanos</a>
+    </section>
+    <!-- Section sobre nosotros -->
+    <section class="aboutSection">
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            En <strong>InnovaCraft</strong> nos especializamos en ofrecer
+            soluciones tecnológicas personalizadas que ayudan a nuestros
+            clientes a destacar en el entorno digital. Desde diseño web hasta
+            desarrollo de aplicaciones, trabajamos con pasión e innovación
+            para transformar tus ideas en realidad.
+          </p>
+          <p>
+            Nuestra misión es proporcionar tecnología accesible y eficiente
+            para empresas de todos los tamaños. Creemos en el poder de la
+            creatividad y la colaboración para impulsar el cambio digital.
+          </p>
         </div>
-       
-        <ul class="nav-link">
-          <li><a href="/index.html" class="active">Inicio</a></li>
+        <div class="about-image">
+          <img src="./assets/images/about-innovacraft.webp" alt="Sobre InnovaCraft">
+        </div>
+      </div>
+
+      <!-- Sección Adicional -->
+      <div class="about-details">
+        <div>
+          <h3>Nuestra Misión</h3>
+          <p>
+            Facilitar la transformación digital de las empresas a través de
+            soluciones tecnológicas creativas y personalizadas.
+          </p>
+        </div>
+        <div>
+          <h3>Nuestra Visión</h3>
+          <p>
+            Ser líderes en innovación tecnológica, ayudando a empresas a
+            alcanzar su máximo potencial en un mundo digital.
+          </p>
+        </div>
+        <div>
+          <h3>Nuestro Equipo</h3>
+          <p>
+            Contamos con un equipo multidisciplinario de expertos en diseño,
+            desarrollo y estrategias digitales.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- nuestro servicios -->
+    <section class="servicesSection">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-list">
+        <article>
+          <img src="./assets/images/diseñoWeb.webp" alt="Diseño Web">
+          <h3>Diseño Web</h3>
+          <p>
+            Desarrollamos sitios web responsivos y atractivos para empresas de
+            todos los tamaños, optimizando la experiencia del usuario.
+          </p>
+        </article>
+        <article>
+          <img src="./assets/images/desarrolloApps.webp" alt="Desarrollo de Aplicaciones">
+          <h3>Desarrollo de Aplicaciones</h3>
+          <p>
+            Creamos aplicaciones personalizadas y multiplataforma para
+            facilitar procesos y mejorar la productividad.
+          </p>
+        </article>
+        <article>
+          <img src="./assets/images/seoMarketing.png" alt="SEO y Marketing">
+          <h3>SEO y Marketing</h3>
+          <p>
+            Aumentamos tu visibilidad en línea con estrategias de SEO y
+            marketing digital.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- productos -->
+    <section>
+      <h2 class="product-section">Nuetros productos</h2>
+      <div class="product-grid">
+        <article>
+          <img src="/assets/images/aplicaciones.webp" alt=" Aplicaciones">
+          <h3>Consultoría Tecnológica</h3>
+          <p>Te ayudamos a encontrar las mejores soluciones tecnológicas para tu negocio.</p>
+        </article>
+        <article>
+          <img src="./assets/images/team-collaboration.png" alt="Colaboración en Equipo">
+          <h3>Gestión de Proyectos</h3>
+          <p>Desarrollamos estrategias y planes para maximizar la eficiencia en tus proyectos.</p>
+        </article>
+      </div>
+    </section>
+    <!-- Nuestro proceso -->
+    <section class="procesoSection">
+      <h2>Nuestro proceso</h2>
+      <ul class="process-list">
+        <li>
+          <h3>Análisis Inicial</h3>
+          <p>Evaluamos tus necesidades y objetivos para proponer las mejores soluciones</p>
+        </li>
+        <li>
+          <h3>Diseño Personalizado</h3>
+          <p>Creamos diseños únicos que reflejan la esencia de tu marca</p>
+        </li>
+        <li>
+          <h3>Entrega y Soporte</h3>
+          <p>Entregamos el proyecto con soporte continuo para asegurar tu satisfación</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Testimonios -->
+    <section class="testimoniosSection">
+      <h2>Testimonios</h2>
+      <div class="testimonios-list">
+        <article tabindex="0">
+          <p>"InnovaCraft superó nuestras expectativas con un diseño moderno y funcional."</p>
+          <cite>- Cliente 1</cite>
+        </article>
+        <article tabindex="0">
+          <p>"El equipo de InnovaCraft nos ayudó a optimizar nuestro proceso de trabajo digital."</p>
+          <cite>- Cliente 2</cite>
+        </article>
+        <article tabindex="0">
+          <p>"Recomendaría a InnovaCraft por su profesionalismo y calidad de servicio."</p>
+          <cite>- Cliente 3</cite>
+        </article>
+      </div>
+    </section>
+
+    <!-- Nuestro Equipo -->
+    <section class="equipoSection">
+      <h2>Nuestro Equipo</h2>
+      <div class="equipo-grid">
+        <article>
+          <img src="./assets/images/equipo1.webp" alt="Equipo 1">
+          <h3>María Pérez</h3>
+          <p>Diseñadora Web</p>
+        </article>
+        <article>
+          <img src="./assets/images/equipo2.webp" alt="Equipo 2">
+          <h3>Carlos López</h3>
+          <p>Desarrollador Full Stack</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>InnovaCraft</h3>
+        <p>InnovaCraft es tu socio en soluciones tecnológicas personalizadas, ayudándote a destacar en el entorno
+          digital.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
           <li><a href="./views/contacto.html">Contacto</a></li>
           <li><a href="./views/presupuesto.html">Presupuesto</a></li>
           <li><a href="./views/productos.html">Productos</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
 
-    <!-- main global -->
-    <main class="main-container">
-      <section class="heroSection">
-        <h1>Bienvenidos a InnovaCraft</h1>
-        <span>Diseño y tecnología al alcance de tus manos</span>
-        <a href="./views/contacto.html">Contácanos</a>
-      </section>
-      <!-- Section sobre nosotros -->
-      <section class="aboutSection">
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              En <strong>InnovaCraft</strong> nos especializamos en ofrecer
-              soluciones tecnológicas personalizadas que ayudan a nuestros
-              clientes a destacar en el entorno digital. Desde diseño web hasta
-              desarrollo de aplicaciones, trabajamos con pasión e innovación
-              para transformar tus ideas en realidad.
-            </p>
-            <p>
-              Nuestra misión es proporcionar tecnología accesible y eficiente
-              para empresas de todos los tamaños. Creemos en el poder de la
-              creatividad y la colaboración para impulsar el cambio digital.
-            </p>
-          </div>
-          <div class="about-image">
-            <img
-              src="./assets/images/about-innovacraft.webp"
-              alt="Sobre InnovaCraft"
-            >
-          </div>
-        </div>
-
-        <!-- Sección Adicional -->
-        <div class="about-details">
-          <div>
-            <h3>Nuestra Misión</h3>
-            <p>
-              Facilitar la transformación digital de las empresas a través de
-              soluciones tecnológicas creativas y personalizadas.
-            </p>
-          </div>
-          <div>
-            <h3>Nuestra Visión</h3>
-            <p>
-              Ser líderes en innovación tecnológica, ayudando a empresas a
-              alcanzar su máximo potencial en un mundo digital.
-            </p>
-          </div>
-          <div>
-            <h3>Nuestro Equipo</h3>
-            <p>
-              Contamos con un equipo multidisciplinario de expertos en diseño,
-              desarrollo y estrategias digitales.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- nuestro servicios -->
-      <section class="servicesSection">
-        <h2>Nuestros Servicios</h2>
-        <div class="services-list">
-          <article>
-            <img src="./assets/images/diseñoWeb.webp" alt="Diseño Web">
-            <h3>Diseño Web</h3>
-            <p>
-              Desarrollamos sitios web responsivos y atractivos para empresas de
-              todos los tamaños, optimizando la experiencia del usuario.
-            </p>
-          </article>
-          <article>
-            <img src="./assets/images/desarrolloApps.webp" alt="Desarrollo de Aplicaciones">
-            <h3>Desarrollo de Aplicaciones</h3>
-            <p>
-              Creamos aplicaciones personalizadas y multiplataforma para
-              facilitar procesos y mejorar la productividad.
-            </p>
-          </article>
-          <article>
-            <img
-              src="./assets/images/seoMarketing.png"
-              alt="SEO y Marketing"
-            >
-            <h3>SEO y Marketing</h3>
-            <p>
-              Aumentamos tu visibilidad en línea con estrategias de SEO y
-              marketing digital.
-            </p>
-          </article>
-        </div>
-      </section>
-      <!-- productos -->
-       <section>
-        <h2 class="product-section">Nuetros productos</h2>
-        <div class="product-grid">
-            <article>
-                <img src="/assets/images/aplicaciones.webp" alt=" Aplicaciones">
-                 <h3>Consultoría Tecnológica</h3>
-        <p>Te ayudamos a encontrar las mejores soluciones tecnológicas para tu negocio.</p>
-            </article>
-            <article>
-        <img src="./assets/images/team-collaboration.png" alt="Colaboración en Equipo">
-        <h3>Gestión de Proyectos</h3>
-        <p>Desarrollamos estrategias y planes para maximizar la eficiencia en tus proyectos.</p>
-      </article>
-        </div>
-       </section>
-       <!-- Nuestro proceso -->
-        <section class="procesoSection">
-            <h2>Nuestro proceso</h2>
-            <ul class="process-list">
-                <li>
-                    <h3>Análisis Inicial</h3>
-                    <p>Evaluamos tus necesidades y objetivos para proponer las mejores soluciones</p>
-                </li>
-                <li>
-                    <h3>Diseño Personalizado</h3>
-                    <p>Creamos diseños únicos que reflejan la esencia de tu marca</p>
-                </li>
-                <li>
-                    <h3>Entrega y Soporte</h3>
-                    <p>Entregamos el proyecto con soporte continuo para asegurar tu satisfación</p>
-                </li>
-            </ul>
-        </section>
-        <!-- Testimonios -->
- <section class="testimoniosSection">
-  <h2>Testimonios</h2>
-  <div class="testimonios-list">
-    <article tabindex="0">
-      <p>"InnovaCraft superó nuestras expectativas con un diseño moderno y funcional."</p>
-      <cite>- Cliente 1</cite>
-    </article>
-    <article tabindex="0">
-      <p>"El equipo de InnovaCraft nos ayudó a optimizar nuestro proceso de trabajo digital."</p>
-      <cite>- Cliente 2</cite>
-    </article>
-    <article tabindex="0">
-      <p>"Recomendaría a InnovaCraft por su profesionalismo y calidad de servicio."</p>
-      <cite>- Cliente 3</cite>
-    </article>
-  </div>
-</section>
-
-    <!-- Nuestro Equipo -->
-  <section class="equipoSection">
-    <h2>Nuestro Equipo</h2>
-    <div class="equipo-grid">
-      <article>
-        <img src="./assets/images/equipo1.webp" alt="Equipo 1">
-        <h3>María Pérez</h3>
-        <p>Diseñadora Web</p>
-      </article>
-      <article>
-        <img src="./assets/images/equipo2.webp" alt="Equipo 2">
-        <h3>Carlos López</h3>
-        <p>Desarrollador Full Stack</p>
-      </article>
+      <div class="footer-social">
+        <h4>Conéctate con Nosotros</h4>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img
+                src="./../assets/images/iconofaceboock.webp" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img
+                src="./../assets/images/iconoinstagrams.webp" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkeding.com" target="_blank" rel="noopener"><img
+                src="./../assets/images/linkeding.webp" alt="Linkeding" /></a>
+          </li>
+          <li>
+            <a href="https://www.x.com" target="_blank" rel="noopener"><img src="./../assets/images/x-twitter.webp"
+                alt="X" /></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </section>
-    </main>
+    <div class="footer-bottom">
+      <p>&copy; 2025 InnovaCraft. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-  <!-- footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>InnovaCraft</h3>
-                <p>InnovaCraft es tu socio en soluciones tecnológicas personalizadas, ayudándote a destacar en el entorno
-                    digital.</p>
-            </div>
-    
-            <div class="footer-links">
-                <h4>Enlaces Rápidos</h4>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="./views/contacto.html">Contacto</a></li>
-                    <li><a href="./views/presupuesto.html">Presupuesto</a></li>
-                    <li><a href="./views/productos.html">Productos</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-social">
-                <h4>Conéctate con Nosotros</h4>
-                <ul>
-                    <li>
-                        <a href="#"><img src="./../assets/images/iconofaceboock.webp" alt="Facebook"></a>
-                    </li>
-                    <li><a href="#"><img src="./../assets/images/iconoinstagrams.webp" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="./../assets/images/linkeding.webp" alt="Linkeding"></a></li>
-                    <li><a href="#"><img src="./../assets/images/x-twitter.webp" alt="X"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 InnovaCraft. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
-    
-  </body>
+</body>
+
 </html>
-
-
