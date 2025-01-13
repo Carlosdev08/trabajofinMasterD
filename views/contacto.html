@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
-  <link rel="stylesheet" href="./../CSS/style.css" />
+  <link rel="stylesheet" href="./../CSS/style.css">
 </head>
 
 <body>
   <header>
-    <!-- Barra de Navegación -->
+    <!-- HEADER -->
     <nav class="navbar">
       <div class="logo">
-        <img src="./../assets/images/logoEmpresa.png" alt="InnovaCraft Logo" />
+        <a href="../index.html"><img src="../assets/images/logoEmpresa.png" alt="InnovaCraft Logo"></a>
       </div>
-
       <ul class="nav-link">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="./contacto.html" class="active">Contacto</a></li>
-        <li><a href="./presupuesto.html">Presupuesto</a></li>
-        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="productos.html">Productos</a></li>
       </ul>
     </nav>
   </header>
@@ -31,108 +30,118 @@
       <h1>Contáctanos</h1>
       <form class="contact-form" action="#" method="post">
         <p>¿Tienes alguna consulta? ¡Escríbenos y te responderemos lo antes posible!</p>
-        <ul class="flex-outer">
+
+        <ul class="contact-flex-outer">
           <li>
-            <label for="first-name">Nombre</label>
+            <label for="first-name">Nombre*</label>
             <input type="text" id="first-name" name="first-name" placeholder="Escriba su nombre"
-              pattern="[A-Za-z\s]{3,15}" title="Escriba solo letras entre 3 y 15 caracteres" required />
+              pattern="[A-Za-z\s]{3,15}" title="Escriba solo letras entre 3 y 15 caracteres" required>
           </li>
           <li>
-            <label for="surname">Apellidos</label>
+            <label for="surname">Apellidos*</label>
             <input type="text" id="surname" name="surname" placeholder="Escriba sus apellidos"
-              pattern="[A-Za-z\s]{3,40}" title="Escriba solo letras entre 3 y 40 caracteres" required />
+              pattern="[A-Za-z\s]{3,40}" title="Escriba solo letras entre 3 y 40 caracteres" required>
           </li>
           <li>
-            <label for="email">Correo Electrónico</label>
+            <label for="email">Correo Electrónico*</label>
             <input type="email" id="email" name="email" placeholder="Escriba su correo"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Escriba su correo electrónico"
-              required />
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Escriba su correo electrónico" required>
           </li>
           <li>
-            <label for="tel">Teléfono</label>
+            <label for="tel">Teléfono*</label>
             <input type="tel" id="tel" name="tel" placeholder="Introduzca su número" pattern="[0-9]{9}"
-              title="Escriba los 9 dígitos de su teléfono correctamente" required />
+              title="Escriba los 9 dígitos de su teléfono correctamente" required>
           </li>
           <li>
             <label for="mensaje">Observaciones</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba sus observaciones aquí"
-              required></textarea>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5"
+              placeholder="Escriba sus observaciones aquí"></textarea>
           </li>
-          <li>
-            <p>Empresa</p>
-            <ul class="flex-inner">
-              <li>
-                <input type="radio" name="industry" id="tech" value="Tecnología" />
-                <label for="tech">Tecnología</label>
-              </li>
-              <li>
-                <input type="radio" name="industry" id="retail" value="Comercio" />
-                <label for="retail">Comercio</label>
-              </li>
-              <li>
-                <input type="radio" name="industry" id="health" value="Salud" />
-                <label for="health">Salud</label>
-              </li>
-              <li>
-                <input type="radio" name="industry" id="education" value="Educación" />
-                <label for="education">Educación</label>
-              </li>
-            </ul>
 
+          <!-- Radio Buttons Mejorados -->
+          <li>
+            <label>Tipo de Empresa*</label>
+            <div class="contact-radio-group">
+              <input type="radio" id="tech" name="industry" value="Tecnología" required>
+              <label for="tech">Tecnología</label>
+
+              <input type="radio" id="retail" name="industry" value="Comercio">
+              <label for="retail">Comercio</label>
+
+              <input type="radio" id="health" name="industry" value="Salud">
+              <label for="health">Salud</label>
+
+              <input type="radio" id="education" name="industry" value="Educación">
+              <label for="education">Educación</label>
+            </div>
           </li>
-          <li class="listButtons">
-            <button type="reset">Borrar</button>
-            <button type="submit">Enviar</button>
-          </li>
+
         </ul>
+        <!-- Botones -->
+        <div class="contact-buttons">
+          <button type="reset">Borrar</button>
+          <button type="submit">Enviar</button>
+        </div>
       </form>
     </section>
   </main>
-  <!-- footer -->
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
+      <!-- Sobre Nosotros -->
       <div class="footer-about">
         <h3>InnovaCraft</h3>
         <p>InnovaCraft es tu socio en soluciones tecnológicas personalizadas, ayudándote a destacar en el entorno
-          digital.</p>
+          digital.
+        </p>
       </div>
 
+      <!-- Enlaces Rápidos -->
       <div class="footer-links">
         <h4>Enlaces Rápidos</h4>
         <ul>
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./presupuesto.html">Presupuesto</a></li>
-          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./views/contacto.html">Contacto</a></li>
+          <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+          <li><a href="./views/productos.html">Productos</a></li>
         </ul>
       </div>
 
+      <!-- Redes Sociales -->
       <div class="footer-social">
-        <h4>Conéctate con Nosotros</h4>
+        <h4>Síguenos en Redes Sociales</h4>
         <ul>
           <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img
-                src="./../assets/images/iconofaceboock.webp" alt="Facebook" /></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <img src="./../assets/images/iconofacebook.webp" alt="Facebook" width="40" height="40">
+            </a>
           </li>
           <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener"><img
-                src="./../assets/images/iconoinstagrams.webp" alt="Instagram" /></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <img src="./../assets/images/iconoinstagram.webp" alt="Instagram" width="40" height="40">
+            </a>
           </li>
           <li>
-            <a href="https://www.linkeding.com" target="_blank" rel="noopener"><img
-                src="./../assets/images/linkeding.webp" alt="Linkeding" /></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <img src="./../assets/images/iconolinkedin.webp" alt="LinkedIn" width="40" height="40">
+            </a>
           </li>
           <li>
-            <a href="https://www.x.com" target="_blank" rel="noopener"><img src="./../assets/images/x-twitter.webp"
-                alt="X" /></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <img src="./../assets/images/iconotwitter.webp" alt="Twitter" width="40" height="40">
+            </a>
           </li>
         </ul>
       </div>
     </div>
+
+    <!-- Pie de Página -->
     <div class="footer-bottom">
-      <p>&copy; 2025 InnovaCraft. Todos los derechos reservados.</p>
+      <p>&copy; 2025 InnovaCraft. Todos los derechos reservados. | Aviso Legal</p>
     </div>
   </footer>
+
 </body>
 
 </html>
